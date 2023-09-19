@@ -1,0 +1,24 @@
+### get All Todos
+GET http://127.0.0.1:3000/api/todo?page=1&limit=5 
+
+### create a Todo
+POST http://127.0.0.1:3000/api/todo
+Content-Type: application/json
+
+{
+    "name": "create a task"   
+}
+
+### update a Todo
+PUT http://127.0.0.1:3000/api/todo/650234be27ce237e7962d487
+Content-Type: application/json
+
+{
+    "name": "update a task",
+    "isCompleted": true
+}
+
+### delete a Todo
+
+DELETE http://127.0.0.1/api/todo/65033b24d594db0bf6d6ceab
+Content-Type: application/json
